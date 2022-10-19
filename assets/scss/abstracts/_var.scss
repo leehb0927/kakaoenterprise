@@ -1,0 +1,100 @@
+//반응형
+$pc : 1480px;
+$tablet : 1023px;
+$mobile : 860px;
+$mobile2 : 540px;
+
+@mixin pc {
+    @media(min-width : $pc) {
+        @content;
+    }
+}
+//가장큰 화면 넓이
+
+@mixin tablet {
+    @media (max-width : $tablet) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media(max-width : $mobile) {
+        @content;
+    }
+}
+
+@mixin mobile2 {
+    @media(max-width : $mobile2) {
+        @content;
+    }
+}
+
+
+
+
+
+
+
+
+
+//애니메이션 효과
+.list-inner.original{
+    animation: 80s linear 0s infinite normal forwards running rollingleft1;
+}
+.list-inner.clone{
+    animation: 80s linear 0s infinite normal none running rollingleft2;
+}
+@keyframes rollingleft1 { /* 원본용 */
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    50.01%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes rollingleft2 { /* 클론용 */
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+
+
+.list-inner2.original2{
+    animation: 80s linear 0s infinite normal forwards running rollingright1;
+}
+.list-inner2.clone2{
+    animation: 80s linear 0s infinite normal none running rollingright2;
+}
+@keyframes rollingright1 { /* 원본용 */
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    50.01%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes rollingright2 { /* 클론용 */
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

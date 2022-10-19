@@ -1,0 +1,296 @@
+.header-wrap {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    transition: border .3s, background .4s;
+    @include mobile {
+        height: 9vh;
+    }
+    @include mobile2 {
+        height: 13vh;
+    }
+    &.scroll {
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+        transition: border .3s, background .4s;
+        h1 {
+            svg {
+                path {
+                    fill: #191919;
+                }
+            }
+        }
+        .gnb-item {
+            color: #191919;
+            a {
+                font-family: 'kakaoBig-Bold';
+            }
+        }
+        .header__career {
+            span {
+                font-family: 'kakaoBig-Bold';
+                color: #191919;
+            }
+            .view-btn {
+                background: #eee;
+            }
+        }
+        .gnb-btn {
+            .btn-bar {
+                background: #191919;
+            }
+        }
+    }
+    //스크롤 했을 때 header
+
+    .header-inner {
+        margin: 0 5vw;
+        position: relative;
+        height: 8.5vh;
+        @include mobile {
+            height: 9vh;
+        }
+        @include mobile2 {
+            height: 13vh;
+        }
+    }
+    h1 {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        a {
+            
+        }
+        svg {
+            width: 145px;
+            height: 20px;
+            path {
+                fill: #fff;
+            }
+            @include mobile2 {
+                width: 250px;
+                height: 30px;
+            }
+        }
+    }
+
+
+    .gnb-wrap {
+        display: block;
+        width: 100%;
+        position: relative;
+        line-height: 1;
+        text-align: center;
+        z-index: 1;
+        @include tablet {
+            display: none;
+        }
+    }
+    .gnb-list {
+        display: inline-block;
+    }
+    .gnb-item {
+        color: #fff;
+        font-size: 0.9rem;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        a {
+            display: block;
+            height: 8vh;
+            padding: 0 2vw;
+            line-height: 8vh;
+            font-family: 'kakaoBig';
+        }
+    }
+
+
+    .header__career {
+        position: absolute;
+        right: 0;
+        top: 1.5vw;
+        display: flex;
+        align-items: center;
+        @include tablet {
+            display: none;
+        }
+        span {
+            display: block;
+            color: #fff;
+            font-family: 'kakaoBig';
+            padding-right: .6vw;
+            font-size: 0.9rem;
+        }
+        .view-btn {
+            width: 1.5vw;
+            height: 1.5vw;
+            background: #fff;
+            border-radius: 50%;
+            position: relative;
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                path {
+                    stroke: #888;
+                }
+            }
+        }
+    }
+
+
+
+
+
+    .gnb-btn {
+        display: none;
+        width: 3.5vw;
+        height: 2vw;
+        position: absolute;
+        top: 3vh;
+        right: 0;
+        z-index: 550;
+        cursor: pointer;
+        @include tablet {
+            display: block;
+        }
+        @include mobile {
+            width: 4.4vw;
+            height: 2.7vw;
+        }
+        @include mobile2 {
+            width: 5.6vw;
+            height: 4vw;
+            top: 5vh;
+        }
+        .btn-bar {
+                display: block;
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                background: #fff;
+            &:nth-child(2) {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:last-child {
+                bottom: 0;
+            }
+        }
+
+        &.click {
+            .btn-bar {
+                background: #000;
+                transition: .3s;
+                &:nth-child(1) {
+                    transform: translate(0px, 8.8939px) rotate(45deg);
+                }
+                &:nth-child(2) {
+                    visibility:hidden;
+                }
+                &:nth-child(3) {
+                    transform: translate(0px, -8.8939px) rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
+.header {
+    .mobile-gnb {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #fff;
+        display: none;
+        padding-top: 13vh;
+        overflow-y:scroll;
+        @include tablet {
+            display: none;
+        }
+        @include mobile2 {
+            padding-top: 18vh;
+        }
+        .mobile-list {
+            position: relative;
+        }
+        .mobile-item {
+            position: relative;
+            a {
+                display: block;
+                font-family: "kakaoBig-Bold";
+                padding: 2vw 0 2vw 4vw;
+                font-size: 2vw;
+                color: #888;
+                position: relative;
+                @include mobile {
+                    font-size: 2.5vw;
+                    padding: 2.7vw 0 2.7vw 4vw;
+                }
+                @include mobile2 {
+                    font-size: 5vw;
+                    padding: 6vw 0 6vw 6vw;
+                }
+            }
+            .dropDown {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 3vw;
+                    height: 3vw;
+                    background-image: url(../images/menu-btn.svg);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    right: 4vw;
+                    transform: rotate(180deg);
+                    opacity: 0.3;
+                    @include mobile2 {
+                        right: 6vw;
+                        width: 5vw;
+                        height: 5vw;
+                        background-size: cover;
+                    }
+                }
+                &.active {
+                    &::after {
+                        opacity: 1;
+                        transition: color .3s;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+    .mobile-sub {
+        background: #f8f8f8;
+        padding: 3vw 0;
+        display: none;
+        @include mobile2 {
+            padding: 5vw 0;
+        }
+        .sub-item {
+            a {
+                font-size: 1.6vw;
+                padding: 1.7vw 0 1.7vw 4vw;
+                @include mobile {
+                    font-size: 2vw;
+                    padding: 2.3vw 0 2.3vw 4vw;
+                }
+                @include mobile2 {
+                    font-size: 4vw;
+                    padding: 4.5vw 0 4.5vw 6vw;
+                }
+            }
+        }
+    }
+}

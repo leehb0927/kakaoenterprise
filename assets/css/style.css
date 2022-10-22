@@ -727,6 +727,11 @@ a {
     height: 30px;
   }
 }
+@media (max-width: 500px) {
+  .header-wrap h1 svg {
+    width: 145px;
+  }
+}
 .header-wrap .gnb-wrap {
   display: block;
   width: 100%;
@@ -842,11 +847,21 @@ a {
 .header-wrap .gnb-btn.click .btn-bar:nth-child(1) {
   transform: translate(0px, 8.8939px) rotate(45deg);
 }
+@media (max-width: 500px) {
+  .header-wrap .gnb-btn.click .btn-bar:nth-child(1) {
+    transform: translate(0px, 3px) rotate(45deg);
+  }
+}
 .header-wrap .gnb-btn.click .btn-bar:nth-child(2) {
   visibility: hidden;
 }
 .header-wrap .gnb-btn.click .btn-bar:nth-child(3) {
   transform: translate(0px, -8.8939px) rotate(-45deg);
+}
+@media (max-width: 500px) {
+  .header-wrap .gnb-btn.click .btn-bar:nth-child(3) {
+    transform: translate(0px, -10px) rotate(-45deg);
+  }
 }
 
 .header .mobile-gnb {
@@ -1652,6 +1667,16 @@ a {
   visibility: hidden;
   font-family: "kakaoBig-Bold";
 }
+@media (max-width: 1023px) {
+  .service .list-inner .service-item .txt-box {
+    padding: 3vw 2.5vw;
+  }
+}
+@media (max-width: 540px) {
+  .service .list-inner .service-item .txt-box {
+    padding: 5.5vw 4.5vw;
+  }
+}
 .service .list-inner .service-item .txt-box .info-bg {
   opacity: 0;
   transition: opacity 0.3s;
@@ -1659,10 +1684,25 @@ a {
 .service .list-inner .service-item .txt-box strong {
   display: block;
   margin-bottom: 12px;
-  font-size: 1.1vw;
   line-height: 1.65;
   color: #fff;
   white-space: normal;
+  font-size: 1.1vw;
+}
+@media (max-width: 1023px) {
+  .service .list-inner .service-item .txt-box strong {
+    font-size: 1.7vw;
+  }
+}
+@media (max-width: 860px) {
+  .service .list-inner .service-item .txt-box strong {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 540px) {
+  .service .list-inner .service-item .txt-box strong {
+    font-size: 3.5vw;
+  }
 }
 .service .list-inner .service-item .txt-box p {
   font-size: 1vw;
@@ -1673,14 +1713,62 @@ a {
   text-overflow: ellipsis;
   white-space: normal;
 }
+@media (max-width: 1023px) {
+  .service .list-inner .service-item .txt-box p {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 860px) {
+  .service .list-inner .service-item .txt-box p {
+    font-size: 1.8vw;
+  }
+}
+@media (max-width: 540px) {
+  .service .list-inner .service-item .txt-box p {
+    font-size: 3vw;
+  }
+}
 .service .list-inner .service-item .logo-box {
   position: relative;
   padding: 5vw 1.9vw 2vw;
+}
+@media (max-width: 1023px) {
+  .service .list-inner .service-item .logo-box {
+    padding: 3vw 2.5vw;
+  }
+}
+@media (max-width: 860px) {
+  .service .list-inner .service-item .logo-box {
+    padding: 5vw 2.5vw 0;
+  }
+}
+@media (max-width: 540px) {
+  .service .list-inner .service-item .logo-box {
+    padding: 10vw 4.5vw 0;
+  }
 }
 .service .list-inner .service-item .logo-img {
   width: 12vw;
   height: 3vw;
   position: relative;
+}
+@media (max-width: 1023px) {
+  .service .list-inner .service-item .logo-img {
+    width: 14vw;
+    height: 4vw;
+  }
+}
+@media (max-width: 860px) {
+  .service .list-inner .service-item .logo-img {
+    width: 15vw;
+    height: 4.5vw;
+  }
+}
+@media (max-width: 540px) {
+  .service .list-inner .service-item .logo-img {
+    height: 8vw;
+    width: 20vw;
+  }
 }
 .service .list-inner .service-item .logo-img img {
   display: block;
@@ -1705,9 +1793,51 @@ a {
   text-align: center;
   display: none;
 }
-.service .list-inner .service-item .more-ico .guide--icon svg {
+@media (max-width: 1023px) {
+  .service .list-inner .service-item .more-ico {
+    width: 2.3vw;
+    height: 2.3vw;
+    bottom: 3vw;
+    right: 3vw;
+  }
+}
+@media (max-width: 860px) {
+  .service .list-inner .service-item .more-ico {
+    width: 2.8vw;
+    height: 2.8vw;
+    bottom: -0.5vw;
+    right: 2.5vw;
+  }
+}
+@media (max-width: 540px) {
+  .service .list-inner .service-item .more-ico {
+    width: 5vw;
+    height: 5vw;
+    right: 4.5vw;
+  }
+}
+.service .list-inner .service-item .more-ico .ico-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service .list-inner .service-item .more-ico svg {
   width: 0.8vw;
   height: 0.8vw;
+}
+@media (max-width: 1023px) {
+  .service .list-inner .service-item .more-ico svg {
+    width: 1.2vw;
+    height: 1.2vw;
+  }
+}
+@media (max-width: 540px) {
+  .service .list-inner .service-item .more-ico svg {
+    width: 2vw;
+    height: 2vw;
+  }
 }
 .service .list-inner .service-item.active .txt-box {
   visibility: visible;
@@ -1731,29 +1861,6 @@ a {
   left: 0;
   z-index: 2;
   display: block;
-}
-.service .list-inner .service-item.active .txt-box {
-  position: relative;
-  padding: 2vw 1.9vw;
-}
-.service .list-inner .service-item.active .txt-box strong {
-  display: block;
-  margin-bottom: 12px;
-  font-size: 1.1vw;
-  line-height: 1.65;
-  font-weight: 600;
-  color: #fff;
-  white-space: normal;
-}
-.service .list-inner .service-item.active .txt-box p {
-  font-size: 1vw;
-  line-height: 1.85;
-  font-weight: 600;
-  color: #ffffff;
-  color: rgba(255, 255, 255, 0.7);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
 }
 .service .list-inner .service-item.active .logoHover {
   position: absolute;

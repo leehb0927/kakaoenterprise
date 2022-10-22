@@ -76,6 +76,9 @@
                 width: 250px;
                 height: 30px;
             }
+            @include mobile3 {
+                width: 145px;
+            }
         }
     }
 
@@ -191,12 +194,19 @@
                 transition: .3s;
                 &:nth-child(1) {
                     transform: translate(0px, 8.8939px) rotate(45deg);
+
+                    @include mobile3 {
+                        transform: translate(0px, 3px) rotate(45deg);
+                    }
                 }
                 &:nth-child(2) {
                     visibility:hidden;
                 }
                 &:nth-child(3) {
                     transform: translate(0px, -8.8939px) rotate(-45deg);
+                    @include mobile3 {
+                        transform: translate(0px, -10px) rotate(-45deg);
+                    }
                 }
             }
         }

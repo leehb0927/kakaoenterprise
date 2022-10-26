@@ -1,249 +1,993 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Publisher Portfolio</title>
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link href="./images/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <title>카카오엔터프라이즈</title>
+    <link href="./assets/images/favicon-32x32.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
-    <div class="cursor">
-        <span>click!</span>
-    </div>
-    <header>
-        <div class="gauge"><div class="curr"></div></div>
-        <h1><a href="">Portfolio</a></h1>
-    </header>
-    <main>
-        <section class="sc_intro">
-            <h2>
-                <span class="bold">끊임없이 발전하는</span><br>
-                <span class="bold en">WEB PUBLISHER</span><br>
-                <span class="bold">이한별 입니다!</span>
-            </h2>
-        </section>
+    <header class="header">
+        <div class="header-wrap">
+            <div class="header-inner">
+                <h1>
+                    <a href="">
+                        <span class="blind">카카오엔터프라이즈</span>
+                        <svg viewBox="0 0 145 20">
+                            <path fill="#191919" d="M2.4,10.6L7,16.3l1.3-1.1l-3.9-4.7l3.4-4.3l-1.4-1L2.4,10.6z M0,1.2V16h1.8V0.8L0,1.2z M9.9,13.2 c0-0.9,0.3-1.8,1.1-2.4c0.7-0.6,1.7-0.8,3.1-0.8h2V9.3c0-1.6-0.7-2.4-2.1-2.4c-0.5,0-1,0.1-1.5,0.2c-0.5,0.1-0.9,0.3-1.4,0.5 l-0.5-1.3c0.5-0.3,1.1-0.5,1.6-0.7c0.6-0.2,1.2-0.2,1.8-0.2c2.5,0,3.7,1.3,3.7,4V16h-1.3l-0.2-1.1c-0.5,0.4-1.1,0.7-1.7,1 c-0.5,0.2-1.1,0.3-1.7,0.3c-0.8,0-1.6-0.2-2.2-0.8C10.2,14.8,9.9,14,9.9,13.2z M13.2,14.8c0.3,0,0.5,0,0.8-0.1 c0.3-0.1,0.5-0.2,0.8-0.3c0.3-0.1,0.5-0.2,0.7-0.4c0.2-0.2,0.4-0.3,0.6-0.5v-2.4h-1.8c-0.9,0-1.6,0.2-2,0.5c-0.5,0.4-0.7,1-0.7,1.5 C11.6,14.2,12.1,14.8,13.2,14.8z M22.7,16h-1.8V1.2l1.8-0.4V16z M27.4,5.3l1.4,1l-3.4,4.3l3.9,4.7L28,16.3l-4.6-5.7L27.4,5.3z M30.8,13.2c0-0.9,0.3-1.8,1.1-2.4c0.7-0.6,1.7-0.8,3.1-0.8h2V9.3c0-1.6-0.7-2.4-2.1-2.4c-0.5,0-1,0.1-1.5,0.2 c-0.5,0.1-1,0.3-1.4,0.5l-0.5-1.3c0.5-0.3,1.1-0.5,1.7-0.7c0.6-0.2,1.2-0.2,1.8-0.2c2.5,0,3.7,1.3,3.7,4V16h-1.3l-0.2-1.1 c-0.5,0.4-1.1,0.7-1.7,1c-0.5,0.2-1.1,0.3-1.7,0.3c-0.8,0-1.6-0.2-2.2-0.8C31.1,14.8,30.8,14,30.8,13.2z M34.2,14.8 c0.3,0,0.5,0,0.8-0.1c0.3-0.1,0.5-0.2,0.8-0.3c0.3-0.1,0.5-0.2,0.7-0.4c0.2-0.2,0.4-0.3,0.6-0.5v-2.5h-1.8c-0.9,0-1.6,0.2-2,0.5 c-0.5,0.4-0.7,1-0.7,1.5C32.6,14.2,33.1,14.8,34.2,14.8z M45.8,5.4c1.3-0.1,2.6,0.5,3.4,1.4s1.2,2.3,1.2,4.1c0,1.8-0.4,3.1-1.2,4 c-0.8,0.9-2,1.4-3.4,1.4c-1.3,0.1-2.6-0.5-3.4-1.4c-0.8-1-1.2-2.3-1.2-4c0-1.7,0.4-3.1,1.3-4.1C43.3,5.8,44.5,5.3,45.8,5.4z M45.8,6.8c-0.8,0-1.6,0.3-2.1,1c-0.5,0.7-0.7,1.7-0.7,3c0,1.3,0.2,2.3,0.7,3c1,1.2,2.7,1.3,3.8,0.4c0.2-0.1,0.3-0.3,0.4-0.4 c0.5-0.7,0.7-1.7,0.7-3c0-1.3-0.2-2.3-0.7-3C47.4,7.1,46.6,6.7,45.8,6.8z"></path>
+                            <path fill="#191919" d="M61.9,10.4c0,0.4,0,0.8-0.1,1.2h-6.3c0.1,1.7,1,2.6,2.9,2.6c0.9,0,1.8-0.2,2.7-0.6l0.6,1.8 c-1.1,0.6-2.4,0.9-3.6,0.9c-3.6,0-5.3-1.9-5.3-5.6c0-3.5,1.8-5.6,4.8-5.6C60.4,5.1,61.9,7,61.9,10.4z M55.5,9.7h3.8 c0-1.8-0.6-2.6-1.9-2.6C56.2,7.1,55.5,8.1,55.5,9.7z M63.8,5.4h1.9l0.4,1.1c0.9-0.8,2.1-1.3,3.4-1.4c2.4,0,3.6,1.4,3.6,4.1V16h-2.7 V9.1c0-1.2-0.4-1.7-1.9-1.7c-0.7,0-1.3,0.2-2,0.4V16h-2.7V5.4z M74.3,5.6L76,5.4V3.3l2.7-0.6v2.7h3.2v2h-3.2V12 c0,1.6,0.4,1.9,1.2,1.9c0.6,0,1.2-0.2,1.8-0.3l0.6,1.9c-1,0.5-2,0.8-3.1,0.8c-2.2,0-3.2-1.4-3.2-4.1V7.4h-1.7L74.3,5.6z M92.4,10.4 c0,0.4,0,0.8-0.1,1.2H86c0.1,1.7,1,2.6,2.9,2.6c0.9,0,1.8-0.2,2.7-0.6l0.6,1.8c-1.1,0.6-2.4,0.9-3.6,0.9c-3.6,0-5.3-1.9-5.3-5.6 c0-3.5,1.8-5.6,4.8-5.6C90.9,5.1,92.4,7,92.4,10.4z M86,9.7h3.8c0-1.8-0.6-2.6-1.9-2.6C86.7,7.1,86,8.1,86,9.7z M96.9,8v8h-2.7V5.4 h1.9l0.4,1.1c0.9-0.9,2.1-1.4,3.3-1.5c0.3,0,0.6,0,0.9,0.1l-0.3,2.6c-0.5-0.1-1-0.2-1.5-0.2C98.2,7.7,97.5,7.7,96.9,8z M104.7,16v4 h-2.7V5.4h1.9l0.3,0.9c0.8-0.8,1.9-1.2,3-1.2c2.8,0,4,2.1,4,5.4c0,3.5-2,5.8-4.9,5.8C105.9,16.3,105.3,16.2,104.7,16z M104.7,7.7 v6.5c0.3,0,0.7,0.1,1,0.1c2.1,0,2.9-1.4,2.9-3.7c0-2-0.5-3.2-2.2-3.2C105.8,7.3,105.3,7.4,104.7,7.7z M116,8v8h-2.7V5.4h1.9l0.4,1.1 c0.9-0.9,2.1-1.4,3.3-1.5c0.3,0,0.6,0,0.9,0.1l-0.3,2.6c-0.5-0.1-1-0.2-1.5-0.2C117.4,7.7,116.7,7.7,116,8z M120.5,2l2-2l2,2l-2,2 L120.5,2z M123.9,5.4V16h-2.7V5.4H123.9z M130.7,9.8c2.2,0.8,2.9,1.6,2.9,3.2c0,2.1-1.4,3.4-4.1,3.4c-1.3,0-2.6-0.3-3.9-0.8l0.5-2.1 c1.1,0.4,2.2,0.7,3.4,0.7c1.1,0,1.5-0.4,1.5-1c0-0.6-0.3-0.9-2.1-1.5c-2.2-0.8-3-1.5-3-3.3c0-1.9,1.6-3.2,3.9-3.2 c1.3,0,2.5,0.3,3.6,0.8l-0.7,1.9c-0.8-0.4-1.7-0.6-2.6-0.6c-1,0-1.6,0.5-1.6,1.1C128.6,8.9,129.2,9.2,130.7,9.8z M144.2,10.4 c0,0.4,0,0.8-0.1,1.2h-6.3c0.1,1.7,1,2.6,2.9,2.6c0.9,0,1.8-0.2,2.7-0.6l0.6,1.8c-1.1,0.6-2.4,0.9-3.6,0.9c-3.6,0-5.3-1.9-5.3-5.6 c0-3.5,1.8-5.6,4.8-5.6C142.6,5.1,144.2,7,144.2,10.4z M137.7,9.7h3.8c0-1.8-0.6-2.6-1.9-2.6C138.5,7.1,137.8,8.1,137.7,9.7z"></path>
+                        </svg>
+                    </a>
+                </h1>
 
+                <div class="gnb-wrap">
+                    <ul class="gnb-list">
+                        <li class="gnb-item"><a href="">서비스</a></li>
+                        <li class="gnb-item"><a href="">기술</a></li>
+                        <li class="gnb-item"><a href="">고객사례</a></li>
+                        <li class="gnb-item"><a href="">개발자</a></li>
+                        <li class="gnb-item"><a href="">문의</a></li>
+                        <li class="gnb-item"><a href="">회사정보</a></li>
+                    </ul>
+                </div>
 
-        <section class="sc_introduce">
-            <div class="chat_wrap">
-                <h2 class="chat_title">
-                    <span>THE KEYWORD</span>
-                    THAT<br>
-                    <span>EXPRESSES</span><br>
-                    ME
-                </h2>
-                <span class="msg chat1">#ACTIONABLE 🏃🏻‍♀️</span>
-                <span class="msg chat2">#LISTEN UP 👂🏻</span>
-                <span class="msg chat3">#MZ 🗣</span>
-                <span class="msg chat4">#INDEPENDENT 🏋️‍♀️</span>
-                <span class="msg chat5">#EARLY BIRD 🕊</span>
-                <span class="msg chat6">#DRIVEN 🚗<span>
-            </div>
+                <a href="" class="header__career">
+                    <span>인재영입</span>
+                    <div class="view-btn">
+                        <i class="ke-guide--icon header__career-circle-hover"><svg width="12" height="12" viewBox="0 0 12 12">
+                            <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M4.1,2.5h5.4v5.3"></path>
+                            <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M8.9,3.2L2.2,9.8"></path>
+                        </svg>
+                        </i>
+                    </div>
+                </a>
 
-            <div class="info">
-                <div class="txt-area1">
-                    <div class="txt-box">
-                        <span>WEB PUBLISHER PROJECT</span>
-                        <span>WEB PUBLISHER PROJECT</span>
-                        <span>WEB PUBLISHER PROJECT</span>
-                        <span>WEB PUBLISHER PROJECT</span>
-                        <span>WEB PUBLISHER PROJECT</span>
-                        <span>WEB PUBLISHER PROJECT</span>
-                    </div>
+                <div class="gnb-btn">
+                    <span class="btn-bar"></span>
+                    <span class="btn-bar"></span>
+                    <span class="btn-bar"></span>
                 </div>
-                <div class="txt-area2">
-                    <div class="txt-box">
-                        <span>WEB PUBLISHER LEEHANBYEUL</span>
-                        <span>WEB PUBLISHER LEEHANBYEUL</span>
-                        <span>WEB PUBLISHER LEEHANBYEUL</span>
-                        <span>WEB PUBLISHER LEEHANBYEUL</span>
-                        <span>WEB PUBLISHER LEEHANBYEUL</span>
-                        <span>WEB PUBLISHER LEEHANBYEUL</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="sc_works">
-            <div class="work">
-                <div class="desc_wrap">
-                    <div class="desc">
-                        <h2>네이버</h2>
-                        <p>
-                            웹 접근성을 준수하여 기존의 네이버 사이트를 적응형으로 클론 코딩하여 제작한 사이트입니다.
-                        </p>
-                        <div class="skill">
-                            <span>#HTML</span>
-                            <span>#CSS</span>
-                        </div>
-                        <div class="btn-wrap">
-                            <a href="https://leehb0927.github.io/naver/" class="view-link" target="_blank">GO! SITE</a>
-                            <a href="https://velog.io/@leehb0927/NAVER-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" target="_blank" class="view-link">GO! VEOLG </a>
-                        </div>
-                    </div>
-                    <div class="img_wrap">
-                        <img src="./images/naver_thumb.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="work">
-                <div class="desc_wrap">
-                    <div class="desc">
-                        <h2>
-                            서울시청
-                        </h2>
-                        <p>
-                            웹 접근성을 준수하여 기존의 서울시청 사이트를 PC적응형으로 클론코딩하여 제작한 사이트입니다.
-                        </p>
-                        <div class="skill">
-                            <span>#HTML</span>
-                            <span>#CSS</span>
-                            <span>#jQuery</span>
-                            <span>#Swiper</span>
-                        </div>
-                        <div class="btn-wrap">
-                            <a href="https://leehb0927.github.io/seoul/" target="_blank" class="view-link">GO! SITE</a>
-                            <a href="https://velog.io/@leehb0927/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C-%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" target="_blank" class="view-link">GO! VEOLG</a>
-                        </div>
-                    </div>
-                    <div class="img_wrap">
-                        <img src="./images/seoul_thumb.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="work">
-                <div class="desc_wrap">
-                    <div class="desc">
-                        <h2>안다르</h2>
-                        <p>웹 접근성을 준수하여 기존의 안다르 사이트를 모바일 적응형으로 클론코딩하여 제작한 사이트입니다.</p>
-                        <div class="skill">
-                            <span>#HTML/CSS</span>
-                            <span>#JavaScript</span>
-                        </div>
-                        <div class="btn-wrap">
-                            <a href="https://leehb0927.github.io/andar/" target="_blank" class="view-link">GO! SITE</a>
-                            <a href="https://velog.io/@leehb0927/andar-%EB%AA%A8%EB%B0%94%EC%9D%BC-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" target="_blank" class="view-link">GO! VEOLG</a>
-                        </div>
-                    </div>
-                    <div class="img_wrap">
-                        <img src="./images/andar_thumb.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="work">
-                <div class="desc_wrap">
-                    <div class="desc">
-                        <h2>카카오엔터프라이즈</h2>
-                        <p>
-                            웹 접근성을 준수하여 기존의 카카오엔터프라이즈 사이트를 반응형으로 클론코딩하여 제작한 사이트입니다.
-                        </p>
-                        <div class="skill">
-                            <span>#HTML</span>
-                            <span>#CSS</span>
-                            <span>#jQuery</span>
-                            <span>#Swiper</span>
-                        </div>
-                        <div class="btn-wrap">
-                            <a href="https://leehb0927.github.io/kakaoenterprise/" target="_blank" class="view-link">GO! SITE</a>
-                        </div>
-                    </div>
-                    <div class="img_wrap">
-                        <img src="./images/kakao_thumb.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="work">
-                <div class="desc_wrap">
-                    <div class="desc">
-                        <h2>코카콜라</h2>
-                        <p>
-                            웹 접근성을 준수하고, Swiper•GSAP 라이브러리를 활용하여 다양한 동작 구성을 추가해 제작한 코카콜라 리뉴얼 사이트입니다.
-                        </p>
-                        <div class="skill">
-                            <span>#HTML/CSS</span>
-                            <span>#JavaScript</span>
-                        </div>
-                        <div class="btn-wrap">
-                            <a href="https://leehb0927.github.io/cocacola/" target="_blank" class="view-link">GO! SITE</a>
-                            <a href="https://velog.io/@leehb0927/COCACOLA-%EB%A6%AC%EB%89%B4%EC%96%BC%EC%82%AC%EC%9D%B4%ED%8A%B8" target="_blank" class="view-link">GO! VEOLG</a>
-                        </div>
-                    </div>
-                    <div class="img_wrap">
-                        <img src="./images/cocacola_thumb.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="work">
-                <div class="desc_wrap">
-                    <div class="desc">
-                        <h2>넷플릭스</h2>
-                        <p>
-                            비동기 통신으로 데이터 바인딩하여 넷플릭스 반응형 사이트를 제작하였습니다.
-                        </p>
-                        <div class="skill">
-                            <span>#HTML/CSS</span>
-                            <span>#JavaScript</span>
-                        </div>
-                        <div class="btn-wrap">
-                            <a href="https://leehb0927.github.io/netflix/" target="_blank" class="view-link">GO! SITE</a>
-                            <a href="https://velog.io/@leehb0927/%EB%84%B7%ED%94%8C%EB%A6%AD%EC%8A%A4-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" target="_blank" class="view-link">GO! VEOLG</a>
-                        </div>
-                    </div>
-                    <div class="img_wrap">
-                        <img src="./images/netflix_thumb.jpeg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="work">
-                <div class="desc_wrap">
-                    <div class="desc">
-                        <h2>메종마르지엘라</h2>
-                        <p>
-                            웹 접근성을 준수하고, Swiper•GSAP 라이브러리를 활용하여 다양한 동작 구성을 추가해 제작한 메종마르지엘라 리뉴얼 사이트입니다.
-                        </p>
-                        <div class="skill">
-                            <span>#HTML/CSS</span>
-                            <span>#JavaScript</span>
-                        </div>
-                        <div class="btn-wrap">
-                            <a href="https://leehb0927.github.io/masionmargiela/" target="_blank" class="view-link">GO! SITE</a>
-                            <a href="https://velog.io/@leehb0927/Masion-Margiela-%EB%A6%AC%EB%89%B4%EC%96%BC-%EB%B0%98%EC%9D%91%ED%98%95" target="_blank" class="view-link">GO! VEOLG</a>
-                        </div>
-                    </div>
-                    <div class="img_wrap">
-                        <img src="./images/margiela_thumb.jpeg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-    <footer>
-        <h3><span>Contact</span>Me!<svg data-v-41f749ee="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165 165" class="smiley"><g data-v-41f749ee="" fill="none" fill-rule="evenodd" transform="translate(-.774 .226)"><g data-v-41f749ee="" fill="#FFF"><path data-v-41f749ee="" d="M115.646 82.94c0 2.824 2.262 5.117 5.05 5.117 2.79 0 5.052-2.293 5.052-5.118 0-2.828-2.262-5.118-5.052-5.118-2.788 0-5.05 2.29-5.05 5.118M50.16 89.53c0 2.826-2.26 5.119-5.051 5.119-2.791 0-5.051-2.293-5.051-5.118 0-2.828 2.26-5.118 5.05-5.118 2.792 0 5.052 2.29 5.052 5.118M84.336 134.856c-26.995 0-39.336-20.064-39.85-20.918a2.347 2.347 0 0 1 .842-3.236 2.414 2.414 0 0 1 3.28.83c.456.756 11.533 18.6 35.599 18.6 24.192 0 35.27-17.844 35.73-18.604a2.414 2.414 0 0 1 3.28-.822 2.344 2.344 0 0 1 .837 3.232c-.511.854-12.852 20.918-39.718 20.918"></path></g><circle data-v-41f749ee="" cx="82.824" cy="82.317" r="80.5" stroke="#FFF" stroke-width="3"></circle></g></svg>
-        </h3>
-        <div class="footer-wrap">
-            <div class="contact-btn">
-                <a href="mailto:as352@naver.com">E-MAIL</a>
-            </div>
-            <div class="contact-btn">
-                <a href="https://github.com/leehb0927?tab=repositories" target="_blank">GITHUB</a>
             </div>
         </div>
-        <span class="copy">Copyrightⓒ 2022. 이한별 All Rights Reserved</span>
+        
+        <div class="mobile-gnb">
+            <ul class="mobile-list">
+                <li class="mobile-item">
+                    <a href="" class="dropDown">서비스</a>
+                    <ul class="mobile-sub">
+                        <li class="sub-item"><a href="">카카오 i 클라우드</a></li>
+                        <li class="sub-item"><a href="">카카오 i 클라우드</a></li>
+                        <li class="sub-item"><a href="">카카오 i 클라우드</a></li>
+                        <li class="sub-item"><a href="">카카오 i 클라우드</a></li>
+                        <li class="sub-item"><a href="">카카오 i 클라우드</a></li>
+                        <li class="sub-item"><a href="">카카오 i 클라우드</a></li>
+                        <li class="sub-item"><a href="">카카오 i 클라우드</a></li>
+                        <li class="sub-item"><a href="">카카오 i 클라우드</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item">
+                    <a href="" class="dropDown">기술</a>
+                    <ul class="mobile-sub">
+                        <li class="sub-item"><a href="">카카오 i 클라우드</a></li>
+                        <li class="sub-item"><a href="">카카오 i 클라우드</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item"><a href="">고객사례</a></li>
+                <li class="mobile-item"><a href="">개발자</a></li>
+                <li class="mobile-item"><a href="">문의</a></li>
+                <li class="mobile-item">
+                    <a href="" class="dropDown">회사정보</a>
+                    <ul class="mobile-sub">
+                        <li class="sub-item"><a href="">카카오 i 클라우드</a></li>
+                        <li class="sub-item"><a href="">카카오 i 클라우드</a></li>
+                        <li class="sub-item"><a href="">카카오 i 클라우드</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item"><a href="">인재영입</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+    <main class="container">
+        <section class="visual">
+            <h2 class="blind">비주얼슬라이드</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main-bg">
+                            <figure class="bg-img1"><span class="blind">AI 기술 기반 라이브 스트리밍 서비스</span></figure>
+                        </div>
+                        <div class="main-txt">
+                            <div class="info-box">
+                                <h2>AI 기술 기반 라이브 스트리밍 서비스<br>
+                                    카카오 i 커넥트 라이브 2.0 오픈!
+                                </h2>
+                                <div class="more-btn">
+                                    <a href="">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="13000">
+                        <div class="main-bg">
+                            <video autoplay="" muted="" loop="">
+                                <source src="./assets/images/main_video2.mp4">
+                            </video>
+                        </div>
+                        <div class="main-txt">
+                            <div class="info-box">
+                                <h2>고객과 함께 혁신을 만들어가는<br>
+                                    카카오엔터프라이즈
+                                </h2>
+                                <div class="more-btn">
+                                    <a href="">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-bg">
+                            <figure class="bg-img2"><span class="blind">대한민국 AI 국가대표</span></figure>
+                        </div>
+                        <div class="main-txt">
+                            <div class="info-box">
+                                <h2>대한민국 AI 국가대표<br>
+                                    글로벌 탑티어 AI 얼굴 인식 기술 대회 1등
+                                </h2>
+                                <div class="more-btn">
+                                    <a href="">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-bg">
+                            <figure class="bg-img3"><span class="blind">업계 최초 IaaS 모든 컴포넌트</span></figure>
+                        </div>
+                        <div class="main-txt">
+                            <div class="info-box">
+                                <h2>업계 최초 IaaS 모든 컴포넌트에 <br>
+                                    쿠버네티스 적용해 CSAP 획득
+                                </h2>
+                                <div class="more-btn">
+                                    <a href="">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-autoplay="19000">
+                        <div class="main-bg">
+                            <video autoplay="" muted="" loop="">
+                                <source src="./assets/images/main_video1.mp4">
+                            </video>
+                        </div>
+                        <div class="main-txt">
+                            <div class="info-box">
+                                <h2>개발자와 함께 성장하는<br>
+                                    카카오엔터프라이즈
+                                </h2>
+                                <div class="more-btn">
+                                    <a href="">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-controler">
+                    <a href="" class="button-prev">
+                        <svg viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 12L3 6.93671L8 2" stroke="black" stroke-width="3" stroke-miterlimit="10"></path>
+                        </svg>
+                    </a>
+                    <div class="fraction"></div>
+                    <a href="" class="button-autoplay">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14,4h4v16h-4V4z M6,20h4V4H6V20z"></path>
+                        </svg>
+                    </a>
+                    <a href="" class="button-next">
+                        <svg viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12L7 6.93671L2 2" stroke="black" stroke-width="3" stroke-miterlimit="10"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="news">
+            <div class="news-wrap">
+                <div class="news-inner">
+                    <h2>
+                        <img src="./assets/images/news-title1.svg" alt="">
+                        <img src="./assets/images/news-title2.svg" alt="">
+                        <img src="./assets/images/news-title3.svg" alt="">
+                        <img src="./assets/images/news-title4.svg" alt="">
+                    </h2>
+
+                    <div class="content">
+                        <div class="news-list">
+                            <div class="news-item">
+                                <div class="cate">
+                                    <a href="">보도자료</a>
+                                    <img src="./assets/images/news-ico.png" alt="">
+                                </div>
+                                <a href="" class="content-link">
+                                    <h3>가천대학교와 AI 및 빅데이터 전문인재 양성 나서</h3>
+                                    <div class="thumb-box">
+                                        <img src="./assets/images/news-thumb1.png" alt="가천대학교 ai 및 빅데이터 전문인재 양성">
+                                    </div>
+                                </a>
+                                <div class="tags">
+                                    <a href="">#교육</a>
+                                    <a href="">#상생</a>
+                                    <a href="">#인공지능(AI)</a>
+                                    <a href="">#카카오워크</a>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="cate">
+                                    <a href="">보도자료</a>
+                                    <img src="./assets/images/news-ico.png" alt="">
+                                </div>
+                                <a href="" class="content-link">
+                                    <h3>가천대학교와 AI 및 빅데이터 전문인재 양성 나서</h3>
+                                    <div class="thumb-box">
+                                        <img src="./assets/images/news-thumb2.jpg" alt="가천대학교 ai 및 빅데이터 전문인재 양성">
+                                    </div>
+                                </a>
+                                <div class="tags">
+                                    <a href="">#교육</a>
+                                    <a href="">#상생</a>
+                                    <a href="">#인공지능(AI)</a>
+                                    <a href="">#카카오워크</a>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="cate">
+                                    <a href="">보도자료</a>
+                                    <img src="./assets/images/news-ico.png" alt="">
+                                </div>
+                                <a href="" class="content-link">
+                                    <h3>가천대학교와 AI 및 빅데이터 전문인재 양성 나서</h3>
+                                    <div class="thumb-box">
+                                        <img src="./assets/images/news-thumb3.jpg" alt="가천대학교 ai 및 빅데이터 전문인재 양성">
+                                    </div>
+                                </a>
+                                <div class="tags">
+                                    <a href="">#교육</a>
+                                    <a href="">#상생</a>
+                                    <a href="">#인공지능(AI)</a>
+                                    <a href="">#카카오워크</a>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="cate">
+                                    <a href="">보도자료</a>
+                                    <img src="./assets/images/news-ico.png" alt="">
+                                </div>
+                                <a href="" class="content-link">
+                                    <h3>가천대학교와 AI 및 빅데이터 전문인재 양성 나서</h3>
+                                    <div class="thumb-box">
+                                        <img src="./assets/images/news-thumb4.jpg" alt="가천대학교 ai 및 빅데이터 전문인재 양성">
+                                    </div>
+                                </a>
+                                <div class="tags">
+                                    <a href="">#교육</a>
+                                    <a href="">#상생</a>
+                                    <a href="">#인공지능(AI)</a>
+                                    <a href="">#카카오워크</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-list">
+                            <div class="news-item">
+                                <div class="cate">
+                                    <a href="">보도자료</a>
+                                    <img src="./assets/images/news-ico.png" alt="">
+                                </div>
+                                <a href="" class="content-link">
+                                    <h3>가천대학교와 AI 및 빅데이터 전문인재 양성 나서</h3>
+                                    <div class="thumb-box">
+                                        <img src="./assets/images/news-thumb5.jpg" alt="가천대학교 ai 및 빅데이터 전문인재 양성">
+                                    </div>
+                                </a>
+                                <div class="tags">
+                                    <a href="">#교육</a>
+                                    <a href="">#상생</a>
+                                    <a href="">#인공지능(AI)</a>
+                                    <a href="">#카카오워크</a>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="cate">
+                                    <a href="">보도자료</a>
+                                    <img src="./assets/images/news-ico.png" alt="">
+                                </div>
+                                <a href="" class="content-link">
+                                    <h3>가천대학교와 AI 및 빅데이터 전문인재 양성 나서</h3>
+                                    <div class="thumb-box">
+                                        <img src="./assets/images/news-thumb6.jpg" alt="가천대학교 ai 및 빅데이터 전문인재 양성">
+                                    </div>
+                                </a>
+                                <div class="tags">
+                                    <a href="">#교육</a>
+                                    <a href="">#상생</a>
+                                    <a href="">#인공지능(AI)</a>
+                                    <a href="">#카카오워크</a>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="cate">
+                                    <a href="">보도자료</a>
+                                    <img src="./assets/images/news-ico.png" alt="">
+                                </div>
+                                <a href="" class="content-link">
+                                    <h3>가천대학교와 AI 및 빅데이터 전문인재 양성 나서</h3>
+                                    <div class="thumb-box">
+                                        <img src="./assets/images/news-thumb7.jpg" alt="가천대학교 ai 및 빅데이터 전문인재 양성">
+                                    </div>
+                                </a>
+                                <div class="tags">
+                                    <a href="">#교육</a>
+                                    <a href="">#상생</a>
+                                    <a href="">#인공지능(AI)</a>
+                                    <a href="">#카카오워크</a>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="cate">
+                                    <a href="">보도자료</a>
+                                    <img src="./assets/images/news-ico.png" alt="">
+                                </div>
+                                <a href="" class="content-link">
+                                    <h3>가천대학교와 AI 및 빅데이터 전문인재 양성 나서</h3>
+                                    <div class="thumb-box">
+                                        <img src="./assets/images/news-thumb8.jpg" alt="가천대학교 ai 및 빅데이터 전문인재 양성">
+                                    </div>
+                                </a>
+                                <div class="tags">
+                                    <a href="">#교육</a>
+                                    <a href="">#상생</a>
+                                    <a href="">#인공지능(AI)</a>
+                                    <a href="">#카카오워크</a>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="cate">
+                                    <a href="">보도자료</a>
+                                    <img src="./assets/images/news-ico.png" alt="">
+                                </div>
+                                <a href="" class="content-link">
+                                    <h3>가천대학교와 AI 및 빅데이터 전문인재 양성 나서</h3>
+                                    <div class="thumb-box">
+                                        <img src="./assets/images/news-thumb9.jpg" alt="가천대학교 ai 및 빅데이터 전문인재 양성">
+                                    </div>
+                                </a>
+                                <div class="tags">
+                                    <a href="">#교육</a>
+                                    <a href="">#상생</a>
+                                    <a href="">#인공지능(AI)</a>
+                                    <a href="">#카카오워크</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-more">
+                        <a href="" class="more-btn">
+                            더 불러오기
+                            <i></i>
+                        </a>
+                    </div>
+                </div><!-- //.news-inner -->
+            </div><!--//.news-wrap-->
+        </section>
+
+
+
+
+        <section class="service">
+            <h2>기술과 서비스</h2>
+            <div class="service-wrap">
+
+                <div class="service-list">
+                    <div class="list-inner">
+                        <div class="service-item service-page">
+                            <a href="" class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service1.gif" alt="kakaowork">
+                                </div>
+                                <div class="info-box">
+                                    <div class="info-bg"></div><!--hover했을 때  배경-->
+                                    <div class="txt-box">
+                                        <strong>카카오워크</strong>
+                                        <p>누구나에게 쉬운,<br>AI 기능을 갖춘 종합 업무 플랫폼</p>
+                                    </div>
+                                    <div class="logo-box">
+                                        <div class="logo-img">
+                                            <img src="./assets/images/service-logo1.png" alt="kakaowork logo">
+                                        </div>
+                                        <div class="more-ico">
+                                            <div class="ico-box">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- //.service-item -->
+                        <div class="service-item service-page">
+                            <a href="" class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service2.jpg" alt="kakao i engine">
+                                </div>
+                                <div class="info-box">
+                                    <div class="info-bg"></div><!--hover했을 때  배경-->
+                                    <div class="txt-box">
+                                        <strong>카카오 i 엔진</strong>
+                                        <p>카카오의 AI 핵심 기술이 결합된 <br>통합 인공지능 플랫폼</p>
+                                    </div>
+                                    <div class="logo-box">
+                                        <div class="logo-img">
+                                            <img src="./assets/images/service-logo2.png" alt="kakao i logo" class="logo">
+                                            <img src="./assets/images/service-logo2hover.png" alt="kakao i logo" class="logoHover">
+                                        </div>
+                                        <div class="more-ico">
+                                            <div class="ico-box">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- //.service-item -->
+                        <div class="service-item service-obj">
+                            <div class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service3.gif" alt="service object">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-item service-page">
+                            <a href="" class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service4.jpg" alt="kakao i search">
+                                </div>
+                                <div class="info-box">
+                                    <div class="info-bg"></div><!--hover했을 때  배경-->
+                                    <div class="txt-box">
+                                        <strong>카카오 i 서치</strong>
+                                        <p>지능형 검색·추천 솔루션, <br>기업용 맞춤 검색 서비스</p>
+                                    </div>
+                                    <div class="logo-box">
+                                        <div class="logo-img">
+                                            <img src="./assets/images/service-logo3.png" alt="kakao i search logo" class="logo">
+                                            <img src="./assets/images/service-logo3hover.png" alt="kakao i search logo" class="logoHover">
+                                        </div>
+                                        <div class="more-ico">
+                                            <div class="ico-box">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- //.service-item -->
+                        <div class="service-item service-obj">
+                            <div class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service5.gif" alt="service object">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-item service-page">
+                            <a href="" class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service6.jpg" alt="kakao i connect live">
+                                </div>
+                                <div class="info-box">
+                                    <div class="info-bg"></div><!--hover했을 때  배경-->
+                                    <div class="txt-box">
+                                        <strong>카카오 i 커넥트 라이브</strong>
+                                        <p>더 나은 연결과 더 새로운 형태의 <br>소통을 위한 서비스 플랫폼  </p>
+                                    </div>
+                                    <div class="logo-box">
+                                        <div class="logo-img">
+                                            <img src="./assets/images/service-logo4.png" alt="kakao i connect live logo" class="logo">
+                                            <img src="./assets/images/service-logo4hover.png" alt="kakao i connect live logo" class="logoHover">
+                                        </div>
+                                        <div class="more-ico">
+                                            <div class="ico-box">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- //.service-item -->
+                        <div class="service-item service-page">
+                            <a href="" class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service7.gif" alt="kakao i cloud">
+                                </div>
+                                <div class="info-box">
+                                    <div class="info-bg"></div><!--hover했을 때  배경-->
+                                    <div class="txt-box">
+                                        <strong>카카오 i 클라우드</strong>
+                                        <p>카카오의 노하우가 집약된<br>클라우드</p>
+                                    </div>
+                                    <div class="logo-box">
+                                        <div class="logo-img">
+                                            <img src="./assets/images/service-logo5.png" alt="kakao i cloud logo">
+                                        </div>
+                                        <div class="more-ico">
+                                            <div class="ico-box">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- //.service-item -->
+                        <div class="service-item service-page">
+                            <a href="" class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service8.jpg" alt="kakao i connect place">
+                                </div>
+                                <div class="info-box">
+                                    <div class="info-bg"></div><!--hover했을 때  배경-->
+                                    <div class="txt-box">
+                                        <strong>카카오 i 커넥트 플레이스</strong>
+                                        <p>카카오엔터프라이즈와 AI가 만드는 <br>더 스마트하고 특별한 공간</p>
+                                    </div>
+                                    <div class="logo-box">
+                                        <div class="logo-img">
+                                            <img src="./assets/images/service-logo6.png" alt="kakao i connect place logo" class="logo">
+                                            <img src="./assets/images/service-logo6hover.png" alt="kakao i connect place logo" class="logoHover">
+                                        </div>
+                                        <div class="more-ico">
+                                            <div class="ico-box">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- //.service-item -->
+                    </div><!--//.list-inner-->
+                </div><!-- //.service-list -->
+
+                <div class="service-list service-list2">
+                    <div class="list-inner list-inner2">
+                        <div class="service-item service-page">
+                            <a href="" class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service2-1.jpg" alt="Biz-Message">
+                                </div>
+                                <div class="info-box">
+                                    <div class="info-bg"></div><!--hover했을 때  배경-->
+                                    <div class="txt-box">
+                                        <strong>카카오 i 커넥트 비즈메시지</strong>
+                                        <p>비즈니스 도구로 활용하는 <br>다채널 메시지 통합 관리 플랫폼</p>
+                                    </div>
+                                    <div class="logo-box">
+                                        <div class="logo-img">
+                                            <img src="./assets/images/service-logo2-1.png" alt="Biz-Message logo" class="logo">
+                                            <img src="./assets/images/service-logo2-1hover.png" alt="Biz-Message logo" class="logoHover">
+                                        </div>
+                                        <div class="more-ico">
+                                            <div class="ico-box">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- //.service-item -->
+                        <div class="service-item service-page">
+                            <a href="" class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service2-2.gif" alt="kakao i LaaS">
+                                </div>
+                                <div class="info-box">
+                                    <div class="info-bg"></div><!--hover했을 때  배경-->
+                                    <div class="txt-box">
+                                        <strong>카카오 i 라스</strong>
+                                        <p>주문부터 배송까지, AI로 연결되는 <br>물류 생태계 플랫폼</p>
+                                    </div>
+                                    <div class="logo-box">
+                                        <div class="logo-img">
+                                            <img src="./assets/images/service-logo2-2.png" alt="kakao i LaaS logo">
+                                        </div>
+                                        <div class="more-ico">
+                                            <div class="ico-box">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- //.service-item -->
+                        <div class="service-item service-obj">
+                            <div class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service2-3.gif" alt="service object">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-item service-page">
+                            <a href="" class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service2-4.jpg" alt="kakao i connect Talk">
+                                </div>
+                                <div class="info-box">
+                                    <div class="info-bg"></div><!--hover했을 때  배경-->
+                                    <div class="txt-box">
+                                        <strong>카카오 i 커넥트 톡</strong>
+                                        <p>AI와 카카오 채널이 결합한 <br>가장 효과적인 커뮤니케이션</p>
+                                    </div>
+                                    <div class="logo-box">
+                                        <div class="logo-img">
+                                            <img src="./assets/images/service-logo2-3.png" alt="kakao i LaaS logo" class="logo">
+                                            <img src="./assets/images/service-logo2-3hover.png" alt="kakao i LaaS logo" class="logoHover">
+                                        </div>
+                                        <div class="more-ico">
+                                            <div class="ico-box">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- //.service-item -->
+                        <div class="service-item service-obj">
+                            <div class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service2-5.gif" alt="service object">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-item service-page">
+                            <a href="" class="service-link">
+                                <div class="thumb-box">
+                                    <img src="./assets/images/service2-6.jpg" alt="kakao i connect center">
+                                </div>
+                                <div class="info-box">
+                                    <div class="info-bg"></div><!--hover했을 때  배경-->
+                                    <div class="txt-box">
+                                        <strong>카카오 i 커넥트 센터</strong>
+                                        <p>카카오엔터프라이즈의 AI기술을<br>활용하는 컨택센터 서비스</p>
+                                    </div>
+                                    <div class="logo-box">
+                                        <div class="logo-img">
+                                            <img src="./assets/images/service-logo2-4.png" alt="kakao i connect center logo" class="logo">
+                                            <img src="./assets/images/service-logo2-4hover.png" alt="kakao i connect center logo" class="logoHover">
+                                        </div>
+                                        <div class="more-ico">
+                                            <div class="ico-box">
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- //.service-item -->
+
+                    </div><!-- //.list-inner -->
+                </div><!-- //.service-list -->
+
+            </div><!-- //.service-wrap -->
+        </section>
+
+
+
+        <section class="banner">
+            <div class="banner-wrap">
+                <div class="bg-box">
+                    <div class="banner-img">
+                        <img src="./assets/images/main-banner-img.png" alt="">
+                    </div>
+                    <div class="txt-box">
+                        <strong>카카오엔터프라이즈는<br>고객, 파트너와 함께 성장하고 있습니다</strong>
+                        <div class="view-btn">
+                            <a href="">고객사례 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="business">
+            <h2>혁신적인 비즈니스</h2>
+            <ul class="business-list">
+                <li class="business-item">
+                    <span class="label">회사소개</span>
+
+                    <strong class="text">
+                        카카오엔터프라이즈는
+                        <br>
+                        비즈니스와 일상에 기술을 더하여
+                        <br>
+                        디지털 혁신을 만들어갑니다.
+                    </strong>
+                    
+                    <a href="" class="view-btn">
+                        <span>회사소개 바로가기</span>
+                        <div class="view-ico">
+                            <i class="ke-guide--icon ke-btn__point-hover"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                </svg>
+                            </i>
+                        </div>
+                    </a>
+                </li>
+                <li class="business-item">
+                    <span class="label">개발자</span>
+
+                    <strong class="text">
+                        카카오엔터프라이즈는
+                        <br>
+                        개발자들과 함께 성장하는 기술
+                        <br>
+                        기업입니다.
+                    </strong>
+
+                    <a href="" class="view-btn">
+                        <span>개발자 바로가기</span>
+                        <div class="view-ico">
+                            <i class="ke-guide--icon ke-btn__point-hover"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                </svg>
+                            </i>
+                        </div>
+                    </a>
+                </li>
+                <li class="business-item">
+                    <span class="label">인재영입</span>
+
+                    <strong class="text">
+                        국내 최고의 AI 개발자, 기획자, 
+                        <br>
+                        디자이너 그리고 비즈니스 전문가가 모여 
+                        <br>
+                        새로운 길을 만들어갑니다.
+                    </strong>
+
+                    <a href="" class="view-btn">
+                        <span>인재영입 바로가기</span>
+                        <div class="view-ico">
+                            <i class="ke-guide--icon ke-btn__point-hover"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11L6 5.93671L1 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                </svg>
+                            </i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+
+
+
+        <section class="connect-banner">
+            <div class="bg-box">
+                <img src="./assets/images/connect-bg.jpg" alt="">
+            </div>
+            <div class="txt-box">
+                <strong>카카오엔터프라이즈의 기술과<br>서비스에 대해 문의하세요.</strong>
+                <div class="connect-btn">
+                    <a href="">문의하기</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="information">
+            <div class="info-wrap">
+                <ul class="info-list">
+                    <li class="info-item">
+                        <a href="" class="dropDown">
+                            <span class="option">회사소개</span>
+                            <i class="ke-guide--icon"><svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 1L6.56329 6L11.5 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                </svg>
+                            </i>
+                        </a>
+                        <ul class="sub-list">
+                            <li class="sub-item"><a href="">회사소개</a></li>
+                            <li class="sub-item"><a href="">보도자료</a></li>
+                            <li class="sub-item"><a href="">새소식</a></li>
+                            <li class="sub-item"><a href="">인재영입</a></li>
+                        </ul><!-- //.sub-list -->
+                    </li>
+                    <li class="info-item">
+                        <a href="">
+                            <strong>개인정보처리방침</strong>
+                        </a>
+                    </li>
+                    <li class="info-item">
+                        <a href="">
+                            <span class="option">사이버윤리실</span>
+                        </a>
+                    </li>
+                    <li class="info-item">
+                        <a href="" class="dropDown">
+                            <span class="option">공지사항</span>
+                            <i class="ke-guide--icon"><svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 1L6.56329 6L11.5 1" stroke="black" stroke-width="2" stroke-miterlimit="10"></path>
+                                </svg>
+                            </i>
+                        </a>
+                        <ul class="sub-list notice">
+                            <li class="sub-item"><a href="">공지사항</a></li>
+                            <li class="sub-item"><a href="">개인정보처리방침변경안내</a></li>
+                        </ul><!-- //.sub-list -->
+                    </li>
+                    <li class="info-item">
+                        <a href="">
+                            <span class="option">문의</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="relate-site">
+                    <button class="relate-btn">
+                        <span>관련사이트</span>
+                        <i class="ke-guide--icon"><svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" stroke="#000000" stroke-width="2" d="M6,0.5v11"></path>
+                            <path fill="none" stroke="#000000" stroke-width="2" d="M0.5,6h11"></path>
+                        </svg>
+                        </i>
+                    </button>
+                    <div class="list-wrap">
+                        <ul class="relate-list">
+                            <li class="relate-item">
+                                <em>서비스</em>
+                                <ul class="relateSub-list">
+                                    <li><a href="">카카오워크</a></li>
+                                    <li><a href="">카카오 i 클라우드</a></li>
+                                    <li><a href="">헤이카카오</a></li>
+                                    <li><a href="">카카오 i 라스</a></li>
+                                    <li><a href="">커넥트 라이브</a></li>
+                                </ul>
+                            </li>
+                            <li class="relate-item">
+                                <em>기술</em>
+                                <ul class="relateSub-list">
+                                    <li><a href="">기술 블로그</a></li>
+                                    <li><a href="">기술 데모</a></li>
+                                    <li><a href="">논문 성과</a></li>
+                                    <li><a href="">기술문서</a></li>
+                                </ul>
+                            </li>
+                            <li class="relate-item">
+                                <em>관계사</em>
+                                <ul class="relateSub-list">
+                                    <li><a href="">카카오</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-sns">
+            <ul class="sns-list">
+                <li class="sns-item instagram">
+                    <a href="">
+                        <span class="blind">인스타그램 바로가기</span>
+                        <div class="ico">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16,29.3c7.4,0,13.3-6,13.3-13.3c0-7.4-6-13.3-13.3-13.3C8.6,2.7,2.7,8.6,2.7,16C2.7,23.4,8.6,29.3,16,29.3z
+                                    M8,12.5C8,10,10,8,12.5,8h7C22,8,24,10,24,12.5v7c0,2.5-2,4.5-4.5,4.5h-7C10,24,8,22,8,19.5V12.5z M12.5,9.2
+                                    c-1.8,0-3.3,1.5-3.3,3.3v7c0,1.8,1.5,3.3,3.3,3.3h7c1.8,0,3.3-1.5,3.3-3.3v-7c0-1.8-1.5-3.3-3.3-3.3H12.5z M21,12.1
+                                    c0,0.5-0.4,0.9-0.9,0.9c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9C20.6,11.2,21,11.6,21,12.1z M16.1,18.6
+                                    c-1.4,0-2.5-1.1-2.5-2.5c0-1.4,1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5C18.6,17.5,17.5,18.6,16.1,18.6z M16.1,12.2c-2.1,0-3.8,1.7-3.8,3.8
+                                    s1.7,3.8,3.8,3.8c2.1,0,3.8-1.7,3.8-3.8S18.2,12.2,16.1,12.2z">
+                                </path>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="sns-item facebook">
+                    <a href="">
+                        <span class="blind">페이스북 바로가기</span>
+                        <div class="ico">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16,29.3c7.4,0,13.3-6,13.3-13.3c0-7.4-6-13.3-13.3-13.3C8.6,2.7,2.7,8.6,2.7,16C2.7,23.4,8.6,29.3,16,29.3z
+                                    M13.4,23.6v-6.8h-2.8v-2.8h2.8v-2.1c0-2.4,1.6-3.8,4.1-3.8C18.8,8,20,8.2,20,8.2v2.4h-1.4c-1.4,0-1.8,0.8-1.8,1.5v1.8h3l-0.5,2.8
+                                    h-2.5v6.8H13.4z"></path>
+                                </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="sns-item blog">
+                    <a href="">
+                        <span class="blind">블로그 바로가기</span>
+                        <div class="ico">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16,29.3c7.4,0,13.3-6,13.3-13.3c0-7.4-6-13.3-13.3-13.3C8.6,2.7,2.7,8.6,2.7,16C2.7,23.4,8.6,29.3,16,29.3z
+                                    M20.2,20.9c0.8-0.6,1.2-1.5,1.2-2.7c0-0.7-0.2-1.3-0.6-1.8c-0.4-0.5-0.9-0.8-1.5-1c0.6-0.2,1-0.6,1.3-1c0.3-0.5,0.5-1,0.5-1.6
+                                    c0-1.1-0.4-2-1.2-2.6c-0.8-0.6-1.9-0.9-3.5-0.9H12v12.6h4.9C18.3,21.9,19.4,21.6,20.2,20.9z M14.5,14.6v-3.2h1.8
+                                    c0.7,0,1.2,0.1,1.6,0.4c0.3,0.3,0.5,0.7,0.5,1.2c0,1-0.7,1.5-2,1.6H14.5z M14.5,19.8h2.2c0.6,0,1.1-0.1,1.4-0.4
+                                    c0.3-0.3,0.5-0.7,0.5-1.2c0-1.2-0.6-1.7-1.8-1.8h-2.4V19.8z"></path>
+                                </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="sns-item youtube">
+                    <a href="">
+                        <span class="blind">유튜브 바로가기</span>
+                        <div class="ico">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16,29.3c7.4,0,13.3-6,13.3-13.3c0-7.4-6-13.3-13.3-13.3C8.6,2.7,2.7,8.6,2.7,16C2.7,23.4,8.6,29.3,16,29.3z
+                                    M22.3,11c0.7,0.2,1.2,0.7,1.4,1.4c0.3,1.3,0.3,3.9,0.3,3.9s0,2.6-0.3,3.9c-0.2,0.7-0.7,1.2-1.4,1.4C21,21.9,16,21.9,16,21.9
+                                    s-5,0-6.3-0.3c-0.7-0.2-1.2-0.7-1.4-1.4C8,18.9,8,16.3,8,16.3s0-2.6,0.3-3.9c0.2-0.7,0.7-1.2,1.4-1.4c1.2-0.3,6.3-0.3,6.3-0.3
+                                    S21,10.7,22.3,11z M14.4,13.9v4.8l4.2-2.4L14.4,13.9z"></path>
+                                </svg>
+                        </div>
+                    </a>
+                </li>
+                <li class="sns-item kakao">
+                    <a href="">
+                        <span class="blind">카카오채널 바로가기</span>
+                        <div class="ico">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16,29.3c7.4,0,13.3-6,13.3-13.3c0-7.4-6-13.3-13.3-13.3C8.6,2.7,2.7,8.6,2.7,16C2.7,23.4,8.6,29.3,16,29.3z
+                                    M19.9,18.3H21v-2.5c0-0.5-0.1-0.9-0.4-1.3c-0.3-0.3-0.7-0.5-1.1-0.5c-0.6,0-1,0.2-1.2,0.6v-2.2h-1.1v5.9h1.1v-2.2
+                                    c0-0.7,0.4-1,0.9-1c0.5,0,0.8,0.3,0.8,0.8V18.3z M15,16.1c-0.2,0.7-0.9,1.2-1.7,1.2c-1,0-1.9-0.8-1.9-1.9c0-1.1,0.8-1.9,1.9-1.9
+                                    c0.8,0,1.5,0.5,1.7,1.3h1.2c-0.3-1.4-1.4-2.4-2.8-2.4c-1.7,0-3,1.3-3,3c0,1.7,1.3,3,3,3c1.4,0,2.5-0.9,2.8-2.3H15z M8,15.4
+                                    C8,11.3,11.6,8,16,8c4.4,0,8,3.3,8,7.4s-3.6,7.4-8,7.4c-0.5,0-1.1,0-1.6-0.1l-0.1,0l-3,2.3c-0.1,0.1-0.3,0-0.3-0.2v-3.5l0,0
+                                    C9.3,19.9,8,18.4,8,15.4z"></path>
+                                </svg>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copy">
+            <p>© Kakao Enterprise Corp.</p>
+        </div>
     </footer>
-    <button class="back_top">back to the top</button>
 
 
-    <script defer src="./js/jquery-3.6.0.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script defer src="./js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
-
 </html>
